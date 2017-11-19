@@ -1,0 +1,103 @@
+
+<div class="my">
+
+
+
+  <div class="container" *ngFor="let i of Items">
+    <div *ngIf="i.blogCategory === request.currentCat" style="border-style: solid">
+      Title   :{{i.blogTitle}} <br>
+      Author  :{{i.postedBy}} <br>
+      Category:{{i.blogCategory}} <br>
+      <hr>
+      {{i.blogContent}}<br>
+      <b>Status for user: {{user}}</b>
+      <div *ngIf="user==i.postedBy">
+
+        <button type="submit" class="btn btn-success"
+                (click)="EditBlogs(i)">Edit Blog</button>
+        <button type="submit" class="btn btn-danger"
+                (click)="DeleteBlogs(i.id)">Delete Blog</button>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" (click)="MarkAsFavorite(i.id)">Mark As Favorite</label>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container" *ngFor="let i of Items">
+    <div *ngIf="i.blogCategory === request.currentCat" style="border-style: solid">
+      Title   :{{i.blogTitle}} <br>
+      Author  :{{i.postedBy}} <br>
+      Category:{{i.blogCategory}} <br>
+      <hr>
+      {{i.blogContent}}<br>
+      <b>Status for user: {{user}}</b>
+      <div *ngIf="user==i.postedBy">
+
+        <button type="submit" class="btn btn-success"
+                (click)="EditBlogs(i)">Edit Blog</button>
+        <button type="submit" class="btn btn-danger"
+                (click)="DeleteBlogs(i.id)">Delete Blog</button>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" (click)="MarkAsFavorite(i.id)">Mark As Favorite</label>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container" *ngFor="let i of Items">
+    <div *ngIf="i.blogCategory === request.currentCat" style="border-style: solid">
+      Title   :{{i.blogTitle}} <br>
+      Author  :{{i.postedBy}} <br>
+      Category:{{i.blogCategory}} <br>
+      <hr>
+      {{i.blogContent}}<br>
+      <b>Status for user: {{user}}</b>
+      <div *ngIf="user==i.postedBy">
+
+        <button type="submit" class="btn btn-success"
+                (click)="EditBlogs(i)">Edit Blog</button>
+        <button type="submit" class="btn btn-danger"
+                (click)="DeleteBlogs(i.id)">Delete Blog</button>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" (click)="MarkAsFavorite(i.id)">Mark As Favorite</label>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="container" *ngFor="let i of Items">
+    <div  style="border-style: solid">
+      Title   :{{i.blogTitle}} <br>
+      Author  :{{i.postedBy}} <br>
+      Category:{{i.blogCategory}} <br>
+      <hr>
+      {{i.blogContent}}<br>
+      <b>Status for user: {{user}}</b>
+      <div *ngIf="user==i.postedBy">
+
+        <button type="submit" class="btn btn-success"
+                (click)="EditBlogs(i)">Edit Blog</button>
+        <button type="submit" class="btn btn-danger"
+                (click)="DeleteBlogs(i.id)">Delete Blog</button>
+
+
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="" (click)="MarkAsFavorite(i.id)">Mark As Favorite</label>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+

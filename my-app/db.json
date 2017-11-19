@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "username": "some",
+      "password": "some",
+      "favBlogs": [
+        7,
+        11,
+        12,
+        5,
+        5
+      ]
+    },
+    {
+      "id": 1,
+      "username": "some1",
+      "password": "some1",
+      "favBlogs": [
+        6,
+        7,
+        8,
+        12
+      ]
+    },
+    {
+      "id": 2,
+      "username": "some2",
+      "password": "some2",
+      "favBlogs": [
+        2,
+        1
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "postedBy": "some",
+      "blogTitle": "sample title",
+      "blogCategory": "Books",
+      "blogContent": "some text",
+      "id": 5
+    },
+    {
+      "postedBy": "some",
+      "blogTitle": "pri",
+      "blogCategory": "Books",
+      "blogContent": "science text",
+      "id": 6
+    },
+    {
+      "postedBy": "some",
+      "blogTitle": "helo",
+      "blogCategory": "Food",
+      "blogContent": "hello ",
+      "id": 7
+    },
+    {
+      "postedBy": "some1",
+      "blogTitle": "priyankar",
+      "blogCategory": "Food",
+      "blogContent": "iit",
+      "id": 8
+    },
+    {
+      "postedBy": "some",
+      "blogTitle": "my ti",
+      "blogCategory": "Sports",
+      "blogContent": "RASULLA IS GOOD",
+      "id": 9
+    },
+    {
+      "postedBy": "some",
+      "blogTitle": "twitter",
+      "blogCategory": "Food",
+      "blogContent": "dsfa;f",
+      "id": 10
+    },
+    {
+      "postedBy": "some",
+      "blogTitle": "kk",
+      "blogCategory": "Food",
+      "blogContent": "jjj",
+      "id": 11
+    },
+    {
+      "postedBy": "some",
+      "blogTitle": "jhhgfkjegf",
+      "blogCategory": "Food",
+      "blogContent": "hdfwgfwhjkfgliufgjdfgsdhvhhfdshfkehdfiweydoiwhdkjgwdjwefhhdfehdgfhjgdfjwhgfdeejekwgjkwqgeruygewurguyewguqewfy",
+      "id": 12
+    }
+  ]
+}

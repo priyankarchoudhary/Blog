@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" routerLink="/" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div *ngIf="!request.loggedIn && !isUserLoggedIn">
+  <li>
+    <a class="nav-link" href="#" routerLink="/login" routerLinkActive="active" >Login <span class="sr-only">(current)</span></a>
+  </li>
+</div>
+  <div *ngIf="request.loggedIn || isUserLoggedIn" >
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="/allblogs" routerLinkActive="active"  >Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li>
+        <a class="nav-link" href="#" (click)="logout($event)">Logout <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  routerLink="/favblogs" routerLinkActive="active">Favorites </button>
+      </li>
+
+      <li>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  routerLink="/addblogs" routerLinkActive="active">Add Blogs </button>
+      </li>
+
+      <li>
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)="setCat('Food')" type="submit" routerLink="/allblogs" routerLinkActive="active" >Food </button>
+      </li>
+
+      <li>
+        <button class="btn btn-outline-success my-2 my-sm-0" #books type="submit" routerLink="/allblogs" routerLinkActive="active" (click)="setCat('Books')">Books </button>
+      </li>
+
+      <li>
+        <button class="btn btn-outline-success my-2 my-sm-0" #sports type="submit" routerLink="/allblogs" routerLinkActive="active" (click)="setCat('Sports')">Sports </button>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  </div>
+  </nav>
+<div class="container">
+
+  <router-outlet></router-outlet>
+</div>
+
+<div *ngIf="request.loggedIn">UserLogged In</div>
+<div *ngIf="!request.loggedIn">User Not Logged In</div>

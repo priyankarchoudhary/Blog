@@ -1,0 +1,16 @@
+<div class="container my" *ngFor="let i of myArray">
+
+  <div> {{i}}</div>
+<!--{{this.ItemBlogs[getIndex(i)].blogContent}}-->
+  <!--</div>-->
+  <div style="border-style: solid">
+    Title   :{{this.ItemBlogs[getIndex(i)].blogTitle}} <br>
+    Author  :{{this.ItemBlogs[getIndex(i)].postedBy}} <br>
+    Category:{{this.ItemBlogs[getIndex(i)].blogCategory}} <br>
+    <hr>
+    {{this.ItemBlogs[getIndex(i)].blogContent}}<br>
+  </div>
+
+
+
+</div>

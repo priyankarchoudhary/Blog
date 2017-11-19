@@ -1,0 +1,26 @@
+<div class="myClass">
+<div >
+  <label>Title</label>
+  <input  type="text"  #title  placeholder="Enter Title">
+</div>
+
+<div >
+  <label>Categories</label>
+  <select #tag >
+    <option value="0" selected="selected"> </option>
+    <option value="Food">Sports</option>
+    <option value="Books">Books</option>
+    <option value="Sports">Food</option>
+  </select>
+</div>
+<div >
+  <label>Write Blog</label>
+  <br>
+  <textarea
+    type="text"  #blogContent></textarea>
+</div>
+<div >
+  <button type="submit" class="btn btn-primary"
+  (click)="AddBlogs({blogtitle:title.value,  blogCategory:tag.options[tag.selectedIndex].value,blogContent:blogContent.value})">Submit</button>
+</div>
+</div>

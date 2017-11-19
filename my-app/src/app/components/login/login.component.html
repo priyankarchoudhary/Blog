@@ -1,0 +1,22 @@
+<div class="container">
+
+  <form class="form-signin DistanceFromTop">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <label for="inputEmail" class="sr-only" style="margin-bottom: 20px;">User Name</label>
+
+    <input name="userEmail"type="email" id="inputEmail" class="form-control" #username
+           [(ngModel)]="model.username" placeholder="Email address" required autofocus><br>
+
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input name="userPassword" type="password" id="inputPassword" class="form-control"
+           placeholder="Password" #password
+           [(ngModel)]="model.password" required>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" (click)="login({username:model.name,password:model.password})">Sign in</button>
+  </form>
+
+</div> <!-- /container -->
